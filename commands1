@@ -1,0 +1,33 @@
+Setup and initialization
+Command 	Description
+git config --global user.name "[name]"	Sets the author name to be used for all future commits.
+git config --global user.email "[email]"	Sets the author email to be used for all future commits.
+git init	Initializes a new local Git repository in the current directory.
+git clone [url]	Creates a local copy of a remote repository.
+Staging and committing changes
+Command 	Description
+git status	Displays the status of the working directory and staging area.
+git add [file]	Adds a file to the staging area to prepare it for a commit.
+git add .	Adds all new and changed files to the staging area.
+git commit -m "[message]"	Records the staged changes as a new commit with a descriptive message.
+git rm [file]	Deletes a file from the working directory and stages the deletion.
+Branching and merging
+Command 	Description
+git branch	Lists all local branches.
+git branch [branch-name]	Creates a new branch.
+git checkout [branch-name]	Switches to the specified branch.
+git checkout -b [branch-name]	Creates a new branch and switches to it.
+git merge [branch-name]	Merges the specified branch into the current active branch.
+git branch -d [branch-name]	Deletes a local branch.
+Remote repositories
+Command 	Description
+git remote add [name] [url]	Connects a local repository to a remote server.
+git push -u [alias] [branch]	Pushes the local branch to the remote repository and sets it as the upstream branch.
+git push	Pushes committed changes to the remote repository (if an upstream branch is set).
+git pull	Fetches and merges changes from the remote repository into the local branch.
+git fetch	Downloads objects and refs from another repository without merging.
+Inspecting history
+Command 	Description
+git log	Displays the commit history.
+git log --oneline	Shows a condensed log with one commit per line.
+git diff	Shows the differences between the working directory and the staging area.
