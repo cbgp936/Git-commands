@@ -1,0 +1,54 @@
+github administration main points
+1.create an organization (Name is unique for a company)
+2.create a repository (A directory or storage space where your projects can live.  two types 1.public repository , 2.private repository)
+3.create a team ( We can create a "N"-number of teams for a projects)
+4.Add user to that Team
+5.Provide repository access to the team(for one teame we can give the multiple repository access)
+
+
+git config --global user.name "username of git account"  (to add username)
+git config --global user.email "email id of git account" ( to add emailid)
+
+git config --global --list  (checking git configuration)
+
+echo "Hello Guys" > hello.txt (to create file and inserted text)
+
+git status ( to check the status of file where it is working area,stagging area or Local Repository )
+
+
+git add .
+git add *
+git add filename 
+git add *.java or any format (  move the file to workingarea(untrackedfile) to staggingarea(trackedfile))
+
+workingarea(displays red colour)
+staggingarea(Green colour)
+
+
+git commit -m "first commit.." ( to commit the code at first time )( only in the stagging area file are to be commited.)(to local repo)
+git commit -m added filename( to add the files)
+git commit -a -m filename ( to add the file directly workingarea to local repo.......it is only for updated file ,
+                                   this command is not applicable for new files)
+
+git remote add <aliasname for Url> repository Url (realtime senario we can use only SSH url)
+
+
+git push <aliasname> groupname (master is default group name)
+
+
+git log (to check logs where you push to repo)
+ex:git log -2 ( it shows only last two commit logs)
+
+git show <commit Id> (it shows detials of that id)
+git show --pretty="" --name-only <commitid> (it shows only filename)
+
+
+git reset ( it will getback all the files staggingarea to workingarea )
+git reset <filename> ( it will getback only that specific named file staggingarea to workingarea)
+
+git revert <commitid> ( to delete newfiles that you commited...... this will only delete updated content )
+
+
+git & Github are different
+git : git is an DVCS..(Distributed version control system)
+Github: github is hosted service for git & it provides GUI
